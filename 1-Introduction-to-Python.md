@@ -6,7 +6,7 @@ Python is a programming language with a syntax that is very readable feeling sim
 
 ---
 
-## <span style="color: teal">Programming Concepts</span>
+## Programming Concepts
 
 | TERM | DEFINITION |
 | --- | --- |
@@ -35,7 +35,7 @@ Python is a programming language with a syntax that is very readable feeling sim
 
 ---
 
-## <span style="color: teal">Naming Rules and Conventions</span>
+## Naming Rules and Conventions
 
 When assigning names to objects, programmers adhere to a set of rules and conventions which help to standardize code and make it more accessible to everyone. Some common naming rules and conventions are:
 
@@ -47,9 +47,9 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 
 ---
 
-## <span style="color: teal">Resources</span>
+## Resources
 
-### Online interpreters and code-pads
+### *Online interpreters and codepads*
 
 - <https://www.python.org/shell/>
 - <https://www.onlinegdb.com/online_python_interpreter>
@@ -58,7 +58,7 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 - <https://rextester.com/l/python3_online_compiler>
 - <https://trinket.io/python3>
 
-### Additional resources
+### *Additional resources*
 
 - Read the [official Python documentation](https://docs.python.org/3/).
 - [Built-in Functions](https://docs.python.org/3/library/functions.html) - Lists and summarizes Python’s built-in functions.
@@ -70,9 +70,9 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 
 ---
 
-## <span style="color: teal">Resolving Problems</span>
+## Resolving Problems
 
-### Common syntax errors
+### *Common syntax errors*
 
 - Misspellings
 - Incorrect indentations
@@ -86,7 +86,7 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 
 If your syntax is correct, but the script has unexpected behavior or output, this may be due to a semantic problem. Syntax is like the vocabulary, grammar, spelling, and punctuation of code. Semantics are the meaning and logic of coded statements. It is possible to have syntactically correct code that runs successfully, but doesn't do what we want it to do.
 
-### Common semantic errors
+### *Common semantic errors*
 
 - Creating functional code, but getting unintentional output
 - Poor logic structures in the design of the code

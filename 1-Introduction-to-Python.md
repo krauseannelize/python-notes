@@ -6,7 +6,7 @@ Python is a programming language with a syntax that is very readable feeling sim
 
 ---
 
-## Programming Concepts
+## <span style="color: teal">Programming Concepts</span>
 
 | TERM | DEFINITION |
 | --- | --- |
@@ -35,7 +35,7 @@ Python is a programming language with a syntax that is very readable feeling sim
 
 ---
 
-## Naming Rules and Conventions
+## <span style="color: teal">Naming Rules and Conventions</span>
 
 When assigning names to objects, programmers adhere to a set of rules and conventions which help to standardize code and make it more accessible to everyone. Some common naming rules and conventions are:
 
@@ -47,7 +47,7 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 
 ---
 
-## Resources
+## <span style="color: teal">Resources</span>
 
 ### Online interpreters and code-pads
 
@@ -70,7 +70,7 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 
 ---
 
-## Resolving Problems
+## <span style="color: teal">Resolving Problems</span>
 
 ### Common syntax errors
 

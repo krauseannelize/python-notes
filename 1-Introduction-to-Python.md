@@ -49,14 +49,14 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 
 ## Resources
 
-### Online interpreters and codepads
+### Online interpreters and code-pads
 
-- https://www.python.org/shell/
-- https://www.onlinegdb.com/online_python_interpreter
-- https://repl.it/languages/python3
-- https://www.tutorialspoint.com/execute_python3_online.php
-- https://rextester.com/l/python3_online_compiler
-- https://trinket.io/python3
+- <https://www.python.org/shell/>
+- <https://www.onlinegdb.com/online_python_interpreter>
+- <https://repl.it/languages/python3>
+- <https://www.tutorialspoint.com/execute_python3_online.php>
+- <https://rextester.com/l/python3_online_compiler>
+- <https://trinket.io/python3>
 
 ### Additional resources
 
@@ -77,9 +77,9 @@ When assigning names to objects, programmers adhere to a set of rules and conven
 - Misspellings
 - Incorrect indentations
 - Missing or incorrect key characters:
-    - Bracket types - ( curved ), [ square ], { curly }
-    - Quote types - "straight-double" or 'straight-single', “curly-double” or ‘curly-single’
-    - Block introduction characters, like colons - :
+  - Bracket types - ( curved ), \[ square ], { curly }
+  - Quote types - "straight-double" or 'straight-single', “curly-double” or ‘curly-single’
+  - Block introduction characters, like colons - :
 - Data type mismatches
 - Missing, incorrectly used, or misplaced Python reserved words
 - Using the wrong case (uppercase/lowercase) - Python is a case-sensitive language

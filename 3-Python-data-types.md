@@ -75,7 +75,7 @@ print(type(y))
 
 ## Boolean
 
-**Boolean** can only have 1 of 2 values: `True` or `False`. This is used to represent logical conditions or decisions. Note that you will need to capitalize the first letter of true or false, otherwise it will return an error.
+**Boolean** can only have 1 of 2 values: `True` or `False`. This is used to represent logical conditions or decisions. Note that you will need to capitalize the first letter of true or false, otherwise it will return an error. You can convert any value to a boolean data type with the function `bool()`.
 
 ```python
 x = 10 > 5   # Returns True as 10 is larger than 5

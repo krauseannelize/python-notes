@@ -2,20 +2,18 @@
 
  Data type specifies the kind of value a variable can hold and the operations that can be performed on the variable. Understanding data types in Python is essential for writing correct, efficient, and readable code. Return the data type of any object with the `type()` function.
 
-- [Text](#type-text)
-- [Numeric](#type-numeric)
-  - [Integer](#type-numeric-integer)
-  - [Float](#type-numeric-float)
-  - [Complex number](#type-numeric-complex)
-- [Boolean](#type-boolean)
-- [Sequence](#type-sequence)
-  - [Range](#type-sequence-range)
-  - [List](#type-sequence-list)
-  - [Tuple](#type-sequence-tuple)
+- [Text](#text)
+- [Numeric](#numeric)
+  - [Integers](#integers)
+  - [Floats](#floats)
+  - [Complex numbers](#complex-numbers)
+- [Boolean](#boolean)
+- [Sequence](#sequence)
+  - [Range](#range)
+  - [List](#list)
+  - [Tuple](#tuple)
 
 ---
-
-<a name="type-text" />
 
 ## Text
 
@@ -32,13 +30,9 @@ Code with examples of how the string data type functions can be found [here](/co
 
 ---
 
-<a name="type-numeric" />
-
 ## Numeric
 
 Code with examples of how the different numeric data types function can be found [here](/code/data-types-numeric.py).
-
-<a name="type-numeric-integer" />
 
 ### *Integers*
 
@@ -50,8 +44,6 @@ print(type(x))
 ```
 
 *Output:* `<class 'int'>` informs you that variable x is of the integer data type.
-
-<a name="type-numeric-float" />
 
 ### *Floats*
 
@@ -65,8 +57,6 @@ print(type(y))
 ```
 
 *Output:* `<class 'float'>` informs you that variables x and y are of the float data type.
-
-<a name="type-numeric-complex" />
 
 ### *Complex numbers*
 
@@ -82,8 +72,6 @@ print(type(y))
 *Output:* `<class 'complex'>` informs you that variables x and y are of the float data type.
 
 ---
-
-<a name="type-boolean" />
 
 ## Boolean
 
@@ -102,13 +90,9 @@ Code with examples of how the boolean data type functions can be found [here](/c
 
 ---
 
-<a name="type-sequence" />
-
 ## Sequence
 
 Code with examples of how the different sequence data types function can be found [here](/code/data-types-sequence.py).
-
-<a name="type-sequence-range" />
 
 ### *Range*
 
@@ -127,8 +111,6 @@ print(type(y))
 
 *Output:* `<class 'range'>` informs you that variables x and y are of the range data type.
 
-<a name="type-sequence-list" />
-
 ### *List*
 
 **List** is a sequence of elements of any type into a single variable that is *mutable*. You can combine multiple data types in one list. Lists have a defined order that will not change, but you can change, add, and remove elements in a list after it has been created. To create a list add the list elements in square brackets ( [ ] ) separating each element with a comma.
@@ -141,8 +123,6 @@ print(type(y))
 ```
 
 *Output:* `<class 'list'>` informs you that variables x and y are of the list data type.
-
-<a name="type-sequence-tuple" />
 
 ### *Tuple*
 

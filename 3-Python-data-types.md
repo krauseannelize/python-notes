@@ -2,6 +2,21 @@
 
  Data type specifies the kind of value a variable can hold and the operations that can be performed on the variable. Understanding data types in Python is essential for writing correct, efficient, and readable code. Return the data type of any object with the `type()` function.
 
+- [Text](#type-text)
+- [Numeric](#type-numeric)
+  - [Integer](#type-numeric-integer)
+  - [Float](#type-numeric-float)
+  - [Complex number](#type-numeric-complex)
+- [Boolean](#type-boolean)
+- [Sequence](#type-sequence)
+  - [Range](#type-sequence-range)
+  - [List](#type-sequence-list)
+  - [Tuple](#type-sequence-tuple)
+
+---
+
+<a name="type-text" />
+
 ## Text
 
 **String** is a collection of one or more characters put in single quotes `'Hello'` or double-quotes `"Hello"`. Python does not have a character data type and a character will be a string of length one.
@@ -17,9 +32,13 @@ Code with examples of how the string data type functions can be found [here](/co
 
 ---
 
+<a name="type-numeric" />
+
 ## Numeric
 
 Code with examples of how the different numeric data types function can be found [here](/code/data-types-numeric.py).
+
+<a name="type-numeric-integer" />
 
 ### *Integers*
 
@@ -31,6 +50,8 @@ print(type(x))
 ```
 
 *Output:* `<class 'int'>` informs you that variable x is of the integer data type.
+
+<a name="type-numeric-float" />
 
 ### *Floats*
 
@@ -44,6 +65,8 @@ print(type(y))
 ```
 
 *Output:* `<class 'float'>` informs you that variables x and y are of the float data type.
+
+<a name="type-numeric-complex" />
 
 ### *Complex numbers*
 
@@ -60,6 +83,8 @@ print(type(y))
 
 ---
 
+<a name="type-boolean" />
+
 ## Boolean
 
 **Boolean** can only have 1 of 2 values: `True` or `False`. This is used to represent logical conditions or decisions. Note that you will need to capitalize the first letter of true or false, otherwise it will return an error.
@@ -73,9 +98,17 @@ print(type(y))
 
 *Output:* `<class 'bool'>` informs you that variables x and y are of the boolean data type.
 
+Code with examples of how the boolean data type functions can be found [here](/code/data-types-boolean.py).
+
 ---
 
+<a name="type-sequence" />
+
 ## Sequence
+
+Code with examples of how the different sequence data types function can be found [here](/code/data-types-sequence.py).
+
+<a name="type-sequence-range" />
 
 ### *Range*
 
@@ -94,6 +127,8 @@ print(type(y))
 
 *Output:* `<class 'range'>` informs you that variables x and y are of the range data type.
 
+<a name="type-sequence-list" />
+
 ### *List*
 
 **List** is a sequence of elements of any type into a single variable that is *mutable*. You can combine multiple data types in one list. Lists have a defined order that will not change, but you can change, add, and remove elements in a list after it has been created. To create a list add the list elements in square brackets ( [ ] ) separating each element with a comma.
@@ -106,6 +141,8 @@ print(type(y))
 ```
 
 *Output:* `<class 'list'>` informs you that variables x and y are of the list data type.
+
+<a name="type-sequence-tuple" />
 
 ### *Tuple*
 

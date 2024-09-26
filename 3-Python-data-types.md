@@ -13,6 +13,8 @@ print(type(x))
 
 *Output:* `<class 'str'>` informs you that variable x is of the string data type.
 
+Code with examples of how the string data type functions can be found [here](/code/data-types-string.py).
+
 ---
 
 ## Numeric

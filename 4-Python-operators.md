@@ -2,6 +2,13 @@
 
 Operators are used to perform different types of operations on variables and values.
 
+- [Arithmetic operators](#arithmetic-operators)
+- [Assignment operators](#assignment-operators)
+- [Comparison operators](#comparison-operators)
+- [Logical operators](#logical-operators)
+- [Identity operators](#identity-operators)
+- [Membership operators](#membership-operators)
+
 ## Arithmetic operators
 
 Arithmetic operators are used with the numeric data types to mathematical operations.

@@ -114,3 +114,23 @@ print("Variables - Using square brackets:")
 print(sentence6)
 print(type(sentence6))
 print()
+
+print("EXAMPLE | Combining data types - explicit conversion")
+# Using + operator to combine strings and integers will produce an error because of a type mismatch
+# Workaround: Using a comma delimiter or converting integer to a string using the str() function
+side_length = 3
+side_width = 2
+area = side_length * side_width
+print("The area of the rectangle is:", area)
+print("The area of the rectangle and the variable type is:")
+print(area)
+print(type(area))
+print()
+message = ("String that includes the area of the triangle, which is " + str(area))
+print(message)
+print(type(message))
+print()
+# This will, however, not work when assigning it a variable as it will create a tuple
+message2 = ("The area of the rectangle is:", area)
+print(message2)
+print(type(message2))

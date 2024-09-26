@@ -4,6 +4,15 @@ Python is a programming language with a syntax that is very readable feeling sim
 
 ![Code snippet printing "Hello World" in Python, Bash and Powershell](images/hello-world-comparison.png 'Code snippet printing "Hello World" in Python, Bash and Powershell')
 
+- [Programming Concepts](#programming-concepts)
+- [Naming Rules and Conventions](#naming-rules-and-conventions)
+- [Resources](#resources)
+  - [Online interpreters and codepads](#online-interpreters-and-codepads)
+  - [Additional resources](#additional-resources)
+- [Resolving Problems](#resolving-problems)
+  - [Common syntax errors](#common-syntax-errors)
+  - [Common semantics errors](#common-semantic-errors)
+
 ---
 
 ## Programming Concepts
@@ -92,3 +101,5 @@ If your syntax is correct, but the script has unexpected behavior or output, thi
 - Poor logic structures in the design of the code
 
 When working with the code blocks in exercises for this course, be mindful of syntax and semantic (logic) errors, along with the overall result of your code. Just because you fixed an error doesn't mean that the code will have the desired effect when it runs! Once you’ve fixed an error in your code, don't forget to click Run to check your work.
+
+---

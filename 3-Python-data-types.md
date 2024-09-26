@@ -2,6 +2,19 @@
 
  Data type specifies the kind of value a variable can hold and the operations that can be performed on the variable. Understanding data types in Python is essential for writing correct, efficient, and readable code. Return the data type of any object with the `type()` function.
 
+- [Text](#text)
+- [Numeric](#numeric)
+  - [Integers](#integers)
+  - [Floats](#floats)
+  - [Complex numbers](#complex-numbers)
+- [Boolean](#boolean)
+- [Sequence](#sequence)
+  - [Range](#range)
+  - [List](#list)
+  - [Tuple](#tuple)
+
+---
+
 ## Text
 
 **String** is a collection of one or more characters put in single quotes `'Hello'` or double-quotes `"Hello"`. Python does not have a character data type and a character will be a string of length one.
@@ -62,7 +75,7 @@ print(type(y))
 
 ## Boolean
 
-**Boolean** can only have 1 of 2 values: `True` or `False`. This is used to represent logical conditions or decisions. Note that you will need to capitalize the first letter of true or false, otherwise it will return an error.
+**Boolean** can only have 1 of 2 values: `True` or `False`. This is used to represent logical conditions or decisions. Note that you will need to capitalize the first letter of true or false, otherwise it will return an error. You can convert any value to a boolean data type with the function `bool()`.
 
 ```python
 x = 10 > 5   # Returns True as 10 is larger than 5
@@ -73,9 +86,13 @@ print(type(y))
 
 *Output:* `<class 'bool'>` informs you that variables x and y are of the boolean data type.
 
+Code with examples of how the boolean data type functions can be found [here](/code/data-types-boolean.py).
+
 ---
 
 ## Sequence
+
+Code with examples of how the different sequence data types function can be found [here](/code/data-types-sequence.py).
 
 ### *Range*
 

@@ -1,8 +1,18 @@
 # 2. Setting up Python
 
+- [Installation](#installation)
+  - [Installing Python on Linux](#installing-python-on-linux)
+  - [Installing Python on MacOS](#installing-python-on-macos)
+  - [Installing Python on Windows](#installing-python-on-windows)
+- [Package Management](#package-management)
+- [IDEs and Text Editors](#ides-and-text-editors)
+  - [VS Code](#vs-code)
+  - [IDLE](#idle)
+- [Virtual Environments and Containers](#virtual-environments-and-containers)
+
 ## Installation
 
-### *Linux*
+### *Installing Python on Linux*
 
 Python 3 should be installed by default. You can check to see if Python is installed by typing `python3` in the terminal. This will:
 
@@ -11,11 +21,11 @@ Python 3 should be installed by default. You can check to see if Python is insta
 
 In the event that you do need to install Python 3 on Linux, you can use the command `sudo apt install python3`.
 
-### *Windows*
+### *Installing Python on macOS*
 
 *\{Get back to this later}*
 
-### *macOS*
+### *Installing Python on Windows*
 
 *\{Get back to this later}*
 
@@ -40,13 +50,13 @@ sudo apt install snapd   # install Snap
 sudo snap install vscode   # use Snap to install VS Code
 ```
 
-Alternatively, download the appropriate package for your Linux distribution from the official [VS Code website](https://code.visualstudio.com/download). Install the package in a terminal by running the following command: `sudo dpkg -i vscode.deb` - replace vscode.deb with the actual filename.
+Alternatively, download the appropriate package for your Linux distribution from the official [VS Code website](https://code.visualstudio.com/download). Install the package in a terminal by running the following command: `sudo dpkg -i vscode.deb` - replace *vscode.deb* with the actual filename.
 
-#### Installing VS Code on Windows
+#### Installing VS Code on macOS
 
 *\{Get back to this later}*
 
-#### Installing VS Code on macOS
+#### Installing VS Code on Windows
 
 *\{Get back to this later}*
 
@@ -61,16 +71,16 @@ sudo apt install idle3   # install
 idle   # launch IDLE
 ```
 
-#### Installing IDLE on Windows
-
-IDLE should be automatically installed along with the latest Python when you download the latest Python installer from the official [Python website](https://www.python.org).
-
 #### Installing IDLE on macOS
 
 *\{Get back to this later}*
 
+#### Installing IDLE on Windows
+
+IDLE should be automatically installed along with the latest Python when you download the latest Python installer from the official [Python website](https://www.python.org).
+
 ---
 
-## Virtual Environments & Containers
+## Virtual Environments and Containers
 
 *\{Get back to this later}*

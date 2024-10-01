@@ -12,12 +12,13 @@
   - [Range](#range)
   - [List](#list)
   - [Tuple](#tuple)
+- [Type annotation](#type-annotation)
 
 ---
 
 ## Text
 
-**String** is a collection of one or more characters put in single quotes `'Hello'` or double-quotes `"Hello"`. Python does not have a character data type and a character will be a string of length one.
+**String** is a collection of one or more characters put in single quotes `'Hello'` or double-quotes `"Hello"`. Python does not have a character data type and a character will be a string of length one. You can convert a value to a string data type with the function `str()`.
 
 ```python
 x = "Hello World!"
@@ -75,7 +76,7 @@ print(type(y))
 
 ## Boolean
 
-**Boolean** can only have 1 of 2 values: `True` or `False`. This is used to represent logical conditions or decisions. Note that you will need to capitalize the first letter of true or false, otherwise it will return an error. You can convert any value to a boolean data type with the function `bool()`.
+**Boolean** can only have 1 of 2 values: `True` or `False`. This is used to represent logical conditions or decisions. Note that you will need to capitalize the first letter of true or false, otherwise it will return an error. You can convert a value to a boolean data type with the function `bool()`.
 
 ```python
 x = 10 > 5   # Returns True as 10 is larger than 5
@@ -113,7 +114,7 @@ print(type(y))
 
 ### *List*
 
-**List** is a sequence of elements of any type into a single variable that is *mutable*. You can combine multiple data types in one list. Lists have a defined order that will not change, but you can change, add, and remove elements in a list after it has been created. To create a list add the list elements in square brackets ( [ ] ) separating each element with a comma.
+**List** is a sequence of elements of any type into a single variable that is *mutable*. You can combine multiple data types in one list. Lists have a defined order that will not change, but you can change, add, and remove elements in a list after it has been created. To create a list add the list elements in square brackets ( [ ] ) separating each element with a comma. You can convert a value to a list data type with the function `list()`.
 
 ```python
 x = ["Ants", "Bees", "Crickets"]   # List of 3 strings
@@ -126,7 +127,7 @@ print(type(y))
 
 ### *Tuple*
 
-**Tuple** is a sequences of elements of any type into a single variable that is *immutable*. You can combine multiple data types in one tuple. Tuples have a defined order that will not change and you cannot change, add or remove elements in a tuple after it has been created. To create a tuple add the tuple elements in round brackets ( () ) separating each element with a comma.
+**Tuple** is a sequences of elements of any type into a single variable that is *immutable*. You can combine multiple data types in one tuple. Tuples have a defined order that will not change and you cannot change, add or remove elements in a tuple after it has been created. To create a tuple add the tuple elements in round brackets ( () ) separating each element with a comma. You can convert a value to a tuple data type with the function `tuple()`.
 
 ```python
 x = ("Avocado", "Beet", "Cucumber")   # Tuple of 3 strings
@@ -136,5 +137,23 @@ print(type(y))
 ```
 
 *Output:* `<class 'list'>` informs you that variables x and y are of the list data type.
+
+---
+
+## Type annotation
+
+**Type annotation** allows you to explicitly specify the data type of variables, function arguments, and return values. Although optional, it can help to reduce the chance of common mistakes and make your code easier to read and review. This improves your codes by making it easier to maintain and reusable.
+
+```python
+# basic annotation syntax
+variable_name: type = value
+
+# examples of type annotation
+name: str = "Bob the Builder"   # define as string
+num_int: int = 10 # define as integer - can't convert float
+num_flt: float = 1.23 # define as float - can't convert integer
+num_list: typing.List[int] = [1, 2, 3]   # define as list - typing used for collection
+num_tuple: typing.Tuple[int, int, int] = (1, 2, 3)   # define as tuple - typing used for collection
+```
 
 ---

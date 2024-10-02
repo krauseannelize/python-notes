@@ -7,3 +7,4 @@ This is a repository for my notes while learning to code in Python. It's primari
 3. [Python data types](/3-Python-data-types.md)
 4. [Python operators](/4-Python-operators.md)
 5. [Built-in Python Functions](/5-Built-in-Python-Functions.md)
+6. [Defining Python Functions](/6-Defining-Python-Functions.md)

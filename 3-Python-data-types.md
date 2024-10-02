@@ -97,7 +97,7 @@ Code with examples of how the different sequence data types function can be foun
 
 ### *Range*
 
-**Range** is a sequence of values defined by a starting and end point, alternatively a continuous set of numbers or characters within a specific interval, that is *immutable*. The basic syntax is `range(start, stop, step)` and the parameters mean:
+**Range** is a sequence of integer values defined by a starting and end point that is *immutable*. The basic syntax is `range(start, stop, step)` and the parameters mean:
 
 - *start* is optional to indicate the start of the sequence, being 0 by default
 - *stop* indicates the end of the sequence and the value being exclusive

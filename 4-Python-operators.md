@@ -15,13 +15,13 @@ Arithmetic operators are used with the numeric data types to mathematical operat
 
 | Operator | Name | Input | Output |
 | --- | --- | --- | --- |
-| + | Addition | 10 + 4 | 14 |
-| - | Subtraction | 10 - 4 | 6 |
-| * | Multiplication | 10 * 4 | 40 |
-| / | Division | 10 / 4 | 2.5 |
-| % | Modulus | 10 % 4 | 5 |
-| // | Floor division | 10 // 4 | 2 |
-| ** | Exponential | 10 ** 4 | 10000 |
+| + | Addition | `10 + 4` | `14` |
+| - | Subtraction | `10 - 4` | `6` |
+| * | Multiplication | `10 * 4` | `40` |
+| / | Division | `10 / 4` | `2.5` |
+| % | Modulus | `10 % 4` | `5` |
+| // | Floor division | `10 // 4` | `2` |
+| ** | Exponential | `10 ** 4` | `10000` |
 
 Some arithmetic operators take precedence over others and will affect the order in which calculations are performed. The precedence is as follows:
 
@@ -55,12 +55,12 @@ Comparison operators are used to compare two values and can only return the bool
 
 | Operator | Is variable | Input | Output |
 | --- | --- | --- | --- |
-| == | equal to | `10 == 5` | False |
-| != | not equal to | `10 != 5` | True |
-| > | greater than | `10 > 10` | False |
-| >= | greater than or equal to | `10 >= 10` | True |
-| < | less than | `10 < 10` | False |
-| <= | less than or equal to | `10 <= 10` | True |
+| == | equal to | `10 == 5` | `False` |
+| != | not equal to | `10 != 5` | `True` |
+| > | greater than | `10 > 10` | `False` |
+| >= | greater than or equal to | `10 >= 10` | `True` |
+| < | less than | `10 < 10` | `False` |
+| <= | less than or equal to | `10 <= 10` | `True` |
 
 ---
 
@@ -70,9 +70,9 @@ Logical operators are used to combine conditional statements and enable operatio
 
 | Operator | Function | Input | Output |
 | --- | --- | --- | --- |
-| and | Both statements must be true to return a true | `10 > 6 and 11 < 7` | False |
-| or | Either statement must be true to return a true | `10 > 6 or 11 < 7` | True |
-| not | Statement must be false to return a true | `not 11 < 7` | True |
+| and | Both statements must be true to return a true | `10 > 6 and 11 < 7` | `False` |
+| or | Either statement must be true to return a true | `10 > 6 or 11 < 7` | `True` |
+| not | Statement must be false to return a true | `not 11 < 7` | `True` |
 
 ---
 
@@ -82,8 +82,8 @@ Identity operators are used to see if two objects are the same object with the s
 
 | Operator | Function | Input | Output |
 | --- | --- | --- | --- |
-| is | Variables must be the same object | `x is y` | False |
-| is not | Variables must not be the same object | `x is not y` | True |
+| is | Variables must be the same object | `x is y` | `False` |
+| is not | Variables must not be the same object | `x is not y` | `True` |
 
 ---
 
@@ -93,7 +93,7 @@ Membership operators are used to check if an element is present within a sequenc
 
 | Operator | Function | Input | Output |
 | --- | --- | --- | --- |
-| in | Element must be present in the sequence | `print(3 in range(10))` | True |
-| not in | Element must not be present in the sequence | `print(7 not in range(10))` | False |
+| in | Element must be present in the sequence | `print(3 in range(10))` | `True` |
+| not in | Element must not be present in the sequence | `print(7 not in range(10))` | `False` |
 
 ---

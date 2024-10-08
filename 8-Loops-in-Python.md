@@ -3,6 +3,9 @@
 **Loops** are programming constructs that allow you to repeatedly execute a block of code until a certain condition is met. They are essential for automating repetitive tasks and making your code more efficient. There are two main types of loops in Python:
 
 1. [WHILE loops](#while-loops)
+    - [BREAK statement with a WHILE loop](#break-statement-with-a-while-loop)
+    - [CONTINUE statement with a WHILE loop](#continue-statement-with-a-while-loop)
+    - [ELSE statement with a WHILE loop](#else-statement-with-a-while-loop)
 1. [FOR loops](#for-loops)
 
 ---
@@ -32,8 +35,8 @@ For example, a WHILE loop can be used as follows:
 ```python
 num = 1   # initialize variable to use in loop
 while num < 6:   # condition evaluates if num is smaller than 6
-  print(num)   # code that executes if num is smaller than 6
-  num += 1   # update variable by incrementing it by 1
+    print(num)   # code that executes if num is smaller than 6
+    num += 1   # update variable by incrementing it by 1
 
 # output:
 # 1
@@ -42,6 +45,41 @@ while num < 6:   # condition evaluates if num is smaller than 6
 # 4
 # 5
 # loops stops as num = 6 and condition now false
+```
+
+---
+
+### BREAK statement with a WHILE loop
+
+
+
+---
+
+### CONTINUE statement with a WHILE loop
+
+
+
+---
+
+### ELSE statement with a WHILE loop
+
+An ELSE statement can be used to execute a block of code once the condition is no longer true and will only be executed if the loop wasn't terminated by a BREAK statement. For example:
+
+```python
+num = 1   # initialize variable to use in loop
+while num < 6:   # condition evaluates if num is smaller than 6
+    print(num)   # code that executes if num is smaller than 6
+    num += 1   # update variable by incrementing it by 1
+else:
+    print("The end.")  # code executes once condition false
+
+# output:
+# 1
+# 2
+# 3
+# 4
+# 5
+# The end.
 ```
 
 ---

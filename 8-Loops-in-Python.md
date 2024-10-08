@@ -9,6 +9,10 @@
     - [PASS statement with a WHILE loop](#pass-statement-with-a-while-loop)
     - [Infinite WHILE loops](#infinite-while-loops)
 1. [FOR loops](#for-loops)
+    - [BREAK statement with a FOR loop](#break-statement-with-a-for-loop)
+    - [CONTINUE statement with a FOR loop](#continue-statement-with-a-for-loop)
+    - [ELSE statement with a FOR loop](#else-statement-with-a-for-loop)
+    - [PASS statement with a FOR loop](#pass-statement-with-a-for-loop)
 
 ---
 
@@ -179,7 +183,7 @@ while num < 3:   # condition evaluates if num is smaller than 3
     num += 1   # update variable by incrementing it by 1
     if num % 2 == 0:  # another condition evaluating if num is even
         pass   # nothing will happen if the num is even
-    print(num)   # code that executes if num is uneven, smaller than 6
+    print(num)   # code that executes if num is smaller than 3
 
 # output:
 # 1
@@ -255,8 +259,161 @@ for num in range(0, 10, 2):
 # 0
 # 2
 # 4
+# 6
 # 8
 # loops stops as it has executed for every iteration in range
+```
+
+---
+
+### BREAK statement with a FOR loop
+
+**BREAK statements** can be used to exit a loop before it has iterated over the entire object. The basic syntax is:
+
+```python
+for element in iterable:
+# for loop executes for every iteration in iterable
+
+    if condition:
+    # add condition to be evaluated
+        break
+        # if condition true, program exits loop
+
+    ("Do this for each element")
+    # block of code that executes for every iteration
+```
+
+For example, a BREAK statement can be used as follows:
+
+```python
+for num in range(0, 10, 2):
+# range sequence start 0, end 10 (exclusive), step 2
+    if num > 5:
+    # condition evaluates if num is larger than 5
+        break
+        # if condition true, program exits loop
+    
+    print(num)
+    # code that executes for every iteration in iterable
+
+# output:
+# 0
+# 2
+# 4
+# num = 6 which is larger than 5 so break triggered and loop exited
+```
+
+---
+
+### CONTINUE statement with a FOR loop
+
+**CONTINUE statements** can be used to end a loop's current iteration without exiting the loop entirely. In essence, it is used when you need to skip over certain iterations that meet a certain condition. The basic syntax is:
+
+```python
+for element in iterable:
+# for loop executes for every iteration in iterable
+
+    if condition:
+    # add condition to be evaluated
+        continue
+        # if condition true, code block not executed for that iteration
+
+    ("Do this for each element")
+    # block of code that executes for every iteration unless condition true   
+```
+
+For example, a CONTINUE statement can be used as follows:
+
+```python
+for num in range(0, 10, 2):
+# range sequence start 0, end 10 (exclusive), step 2
+    if num == 6:
+    # condition evaluates if num is equal to 6
+        continue
+        # if condition true, code block not executed for that iteration
+    
+    print(num)
+    # code that executes for every iteration in iterable
+
+# output:
+# 0
+# 2
+# 4
+# 8
+# code block not executed for 6 as it met the condition
+```
+
+---
+
+### ELSE statement with a FOR loop
+
+**ELSE statements** can be used to execute a block of code once it has iterated over all elements and will only be executed if the loop wasn't terminated by a [BREAK statement](#break-statement-with-a-for-loop). The basic syntax is:
+
+```python
+for element in iterable:
+# for loop executes for every iteration in iterable
+
+    ("Do this for each element")
+    # block of code that executes for every iteration
+
+else:
+    ("End of sequence reached.")
+    # block of code that executes when for loop has completed all iterations    
+```
+
+For example, a ELSE statement can be used as follows:
+
+```python
+for num in range(0, 10, 2):
+# range sequence start 0, end 10 (exclusive), step 2
+    print(num)
+    # code that executes for every iteration in iterable
+else:
+    print("End of the range.")
+    # code that executes after for loop iterated over every iteration
+
+# output:
+# 0
+# 2
+# 4
+# 6
+# 8
+# End of the range.
+```
+
+---
+
+### PASS statement with a FOR loop
+
+**PASS statements** intentionally does nothing and is used when a statement is required by syntax, but you don’t want anything to happen. This is useful as a placeholder for future code to avoid errors as FOR loops cannot be empty. The basic syntax is:
+
+```python
+for element in iterable:
+# for loop executes for every iteration in iterable
+
+    pass
+    # no code is executed for every iteration in iterable
+```
+
+For example, a PASS statement can be used as follows:
+
+```python
+for num in range(0, 10, 2):
+# range sequence start 0, end 10 (exclusive), step 2
+    if num == 6:
+    # condition evaluates if num is equal to 6
+        pass
+        # nothing will happen if num is equal to 6
+    
+    print(num)
+    # code that executes for every iteration in iterable
+
+# output:
+# 0
+# 2
+# 4
+# 6
+# 8
 ```
 
 ---

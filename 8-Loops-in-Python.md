@@ -6,6 +6,8 @@
     - [BREAK statement with a WHILE loop](#break-statement-with-a-while-loop)
     - [CONTINUE statement with a WHILE loop](#continue-statement-with-a-while-loop)
     - [ELSE statement with a WHILE loop](#else-statement-with-a-while-loop)
+    - [PASS statement with a WHILE loop](#pass-statement-with-a-while-loop)
+    - [Infinite WHILE loops](#infinite-while-loops)
 1. [FOR loops](#for-loops)
 
 ---
@@ -51,19 +53,92 @@ while num < 6:   # condition evaluates if num is smaller than 6
 
 ### BREAK statement with a WHILE loop
 
+**BREAK statements** can be used to exit a loop early. Even if the condition is true, the loop is terminated and the program flow redirected. The basic syntax is:
 
+```python
+while condition1:
+# loop will continue as long as condition1 is true
+
+    ("Do this if true")
+    # block of code that executes if condition is true
+    
+    if condition2:
+    # add another condition to be evaluated
+        break
+        # if condition2 true, program exits loop
+```
+
+For example, a BREAK statement can be used as follows:
+
+```python
+num = 1   # initialize variable to use in loop
+while num < 6:   # condition evaluates if num is smaller than 6
+    print(num)   # code that executes if num is smaller than 6
+    num += 1   # update variable by incrementing it by 1
+    if num == 3:  # another condition evaluating if num equal to 3
+        break   # break will terminate loop if num equal to 3
+
+# output:
+# 1
+# 2
+# loop exited as num = 3 and condition true that triggered the break
+```
 
 ---
 
 ### CONTINUE statement with a WHILE loop
 
+**CONTINUE statements** can be used to end a loop's current iteration without exiting the loop entirely. In essence, it is used when you need to skip over certain iterations that meet a certain condition. The basic syntax is:
 
+```python
+while condition1:
+# loop will continue as long as condition1 is true
+
+    if condition2:
+    # add another condition to be evaluated
+        continue
+        # if condition2 true, code block not executed for that iteration
+
+    ("Do this if true")
+    # block of code that executes if condition1 is true and condition2 false
+    
+```
+
+For example, a CONTINUE statement can be used as follows:
+
+```python
+num = 0   # initialize variable to use in loop
+while num < 6:   # condition evaluates if num is smaller than 6
+    num += 1   # update variable by incrementing it by 1
+    if num % 2 == 0:  # another condition evaluating if num is even
+        continue   # continue will skip iterations where num is even
+    print(num)   # code that executes if num is uneven, smaller than 6
+
+# output:
+# 1
+# 3
+# 5
+```
 
 ---
 
 ### ELSE statement with a WHILE loop
 
-An ELSE statement can be used to execute a block of code once the condition is no longer true and will only be executed if the loop wasn't terminated by a BREAK statement. For example:
+**ELSE statements** can be used to execute a block of code once the condition is no longer true and will only be executed if the loop wasn't terminated by a [BREAK statement](#break-statement-with-a-while-loop). The basic syntax is:
+
+```python
+while condition:
+# loop will continue as long as condition is true
+
+    ("Do this if true")
+    # block of code that executes if condition is true
+else:
+    ("Do this if no longer true")
+    # block of code that executes if condition no longer true
+    
+```
+
+For example, a ELSE statement can be used as follows:
 
 ```python
 num = 1   # initialize variable to use in loop
@@ -80,6 +155,74 @@ else:
 # 4
 # 5
 # The end.
+```
+
+---
+
+### PASS statement with a WHILE loop
+
+**PASS statements** intentionally does nothing and is used when a statement is required by syntax, but you don’t want anything to happen. This is useful as a placeholder for future code to avoid errors. The basic syntax is:
+
+```python
+while condition:
+# loop will continue as long as condition is true
+
+    pass
+    # no code is executed while the condition is true    
+```
+
+For example, a PASS statement can be used as follows:
+
+```python
+num = 0   # initialize variable to use in loop
+while num < 3:   # condition evaluates if num is smaller than 3
+    num += 1   # update variable by incrementing it by 1
+    if num % 2 == 0:  # another condition evaluating if num is even
+        pass   # nothing will happen if the num is even
+    print(num)   # code that executes if num is uneven, smaller than 6
+
+# output:
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+```
+
+---
+
+### Infinite WHILE loops
+
+A WHILE loop will repeat a block of code as long as a certain condition is true. The condition is checked at the beginning of each iteration and the loop may never run if the condition is false from the outset. On the other hand, a loop may never stop unless the necessary code is added to make the condition false at some point during the execution of the loop, or a BREAK statement is used as a control statement. When this happens, an **infinite loop** has been created that will run infinite times until the memory is full. An example of an infinite loop:
+
+```python
+num = 1   # initialize variable to use in loop
+while num < 6:   # condition evaluates if num is smaller than 6
+    print("Infinite loop")   # code that executes if num is smaller than 6
+    # 1 will always be smaller than 6 thus creating an infinite loop
+```
+
+How to fix an infinite loop:
+
+```python
+# Updating the variable incrementally with each iteration
+# Loop will exit once num = 6
+
+num = 1   # initialize variable to use in loop
+while num < 6:   # condition evaluates if num is smaller than 6
+    print(num)   # code that executes if num is smaller than 6
+    num += 1   # update variable by incrementing it by 1
+
+# Using a BREAK statement as a control statement
+# Loop will exit once num = 6
+
+num = 1   # initialize variable to use in loop
+while True:   # do while loop - condition is always true to begin with
+    print(num)   # code that executes indefinitely
+    num += 1   # update variable by incrementing it by 1
+    if num > 5:   # condition that evaluates if num is larger than 5
+        break   # if num is 6 and larger than 5, break will exit the loop
 ```
 
 ---
